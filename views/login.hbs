@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<!-- <form action="/login" method="POST">
+    <input type="text" name="usr_loggedid">
+    <input type="pass" name="usr_loggedpass">
+    <button type="submit">login Btn</button>
+    </form> -->
+<body>
+    {{!-- ./index mein daalna user ko login karne ke baad --}}
+    <form class="container" action="/login" method="POST">
+        <div class="page1">
+            <img src="/img/img.png" alt="">
+        </div>
+        <div class="page2">
+            <div class="info1">
+                <label for="email">Username</label>
+                <input type="text" id="email" name="usr_loggedid" autofocus>
+            </div>
+             <div class="info2">
+
+                <label for="password">Password</label>
+                <div class="info2-right">
+
+                    <input type="password" id="password" name="usr_loggedpass" >
+                    {{!-- <a href="#">Forget?</a> --}}
+                </div>
+            </div>
+            <div class="btns">
+                <button type="submit" value="login" class="signin">Login</button>
+                {{!-- <button type="submit">
+                    <i class="bi bi-person-add"></i>
+                    <span>
+                        Login
+                    </span>
+                </button> --}}
+            </div>
+            <div class="footer">
+                All Rights Reserved Dev_Creepers
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

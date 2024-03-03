@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+html {
+    font-size: 13px;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        .page1 {
+            display: grid;
+            place-items: center;
+            width: 50%;
+            // height: 100%;
+            background-color: white;
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .page2 {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(211, 211, 211);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 6rem;
+            .info1 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                label {
+                    color: rgb(124, 124, 124);
+                    width: 80%;
+                    font-size: 1.4rem;
+                }
+                input {
+                    width: 65%;
+                    height: 2rem;
+                    margin-top: 1rem;
+                    background: transparent;
+                    border: transparent;
+                    border-top: transparent;
+                    border-bottom: 2px solid rgb(124, 124, 124);
+                    font-size: 1.4rem;
+                    outline: none;
+                    &:hover {
+                        border-bottom: 2px solid black;
+                    }
+                }
+            }
+            .info2 {
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                label {
+                    color: rgb(124, 124, 124);
+                    width: 100%;
+                    font-size: 1.4rem;
+                }
+                .info2-right {
+                    display: flex;
+
+                    input {
+                        width: 65%;
+                        height: 2rem;
+                        margin-top: 1rem;
+                        background: transparent;
+                        border: transparent;
+                        border-top: transparent;
+                        border-bottom: 2px solid rgb(124, 124, 124);
+                        outline: none;
+
+                        &:hover {
+                            border-bottom: 2px solid black;
+                        }
+                        
+                    }
+                     
+                    a {
+                        margin-left: 1rem;
+                        align-self: last baseline;
+                        text-decoration: none;
+                        color: rgb(124, 124, 124);
+                    }
+
+                }
+
+            }
+            .btns {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 3rem;
+                width: 65%;
+                .signin {
+                    height: 2rem;
+                    width: 40%;
+                    background-color: black;
+                    border-radius: 0.4rem;
+                    border: none;
+                    color: white;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                }
+                button {
+                    height: 2rem;
+                    width: 40%;
+                    background-color: transparent;
+                    border-radius: 0.4rem;
+                    border: none;
+                    color: white;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    span {
+                        margin-left: 0.8rem;
+                    }
+                    &:hover {
+                        color: rgb(124, 124, 124);
+                    }
+                }
+            }
+            .footer {
+                position: absolute;
+                bottom: 2rem;
+                color: rgb(124, 124, 124);
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        .container {
+            flex-direction: column;
+            .page1,
+            .page2 {
+                width: 100%;
+            }
+        }
+    }
+}

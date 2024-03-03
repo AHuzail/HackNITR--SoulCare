@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: yellow;
+}
+body .left {
+  width: 50%;
+  height: 100%;
+  background-color: pink;
+}
+body .right {
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}/*# sourceMappingURL=main.css.map */

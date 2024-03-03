@@ -1,1 +1,0 @@
-# HackNITR--SoulCare
